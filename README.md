@@ -43,9 +43,11 @@ newest_id = cur.lastrowid
 cur.execute("SELECT * FROM `member` WHERE `id` = %s", newest_id)
 print(cur.fetchone(), "新增成功")
 ```
-![new inserted screenshot](/new_inserted.png)
+
+![new_inserted](/new_inserted.png)
 
 
 修改和刪除後也會印出資料編號進行確認：
+
 ![modified](/modified.PNG)
 
