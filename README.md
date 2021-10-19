@@ -44,7 +44,7 @@ cur.execute("SELECT * FROM `member` WHERE `id` = %s", newest_id)
 print(cur.fetchone(), "新增成功")
 ```
 
-![new_inserted](/new_inserted.png)
+![image](/new_inserted.PNG)
 
 
 修改和刪除後也會印出資料編號進行確認：
