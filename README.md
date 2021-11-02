@@ -3,7 +3,7 @@
 一個簡單的資料庫管理介面，透過Python來控制MySQL資料庫的新增、修改、刪除。
 
 使用pymysql來連結資料庫，用prettytable將資料表輸出成易閱讀的表格，由於更新和刪除的指令也會需要將會員資料表印出，故寫成function來重複使用。
-```
+```python
 def show_all_data():
     clear()
     # 搜尋資料庫找出會員列表
@@ -38,7 +38,7 @@ def show_all_data():
 ## 確認資訊
 
 我多加一點功能，讓新增資料後顯示新建的最新一筆資訊：
-```
+```python
 newest_id = cur.lastrowid
 cur.execute("SELECT * FROM `member` WHERE `id` = %s", newest_id)
 print(cur.fetchone(), "新增成功")
